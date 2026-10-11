@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "id": "SHAM-2024-015",
+    "name": "Shampoo1",
+    "version": "2.1",
+    "created_by": "Maria Santos",
+    "created_date": "2024-03-15T10:30:00Z",
+    "modified_by": "James Wilson",
+    "modified_date": "2024-03-20T14:15:00Z",
+    "laboratory": "Personal Care R&D Lab",
+    "project_code": "PC-SHAM-2024",
+    "classification": "proprietary",
+    "status": "validated",
+    "batch_size": "1000ml",
+    "expected_yield": "975ml",
+    "expected_weight": "1010g",
+    "preparation_time": "90 minutes",
+    "shelf_life": "24 months",
+    "storage_conditions": "Store at room temperature"
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "type": "addition",
+      "action": "Add initial water",
+      "description": "Using digital balance EQ-001, measure 800ml (800g) distilled water into main mixing vessel",
+      "material": "MAT-002",
+      "equipment": [
+        "EQ-001"
+      ],
+      "addition_rate": "slow pour",
+      "weight_added": "800g",
+      "duration": "1 minute",
+      "temperature": "ambient",
+      "critical": false
+    },
+    {
+      "step": 2,
+      "type": "weight",
+      "action": "Weigh glycerin",
+      "description": "Using digital balance EQ-001, accurately measure 20ml (25g) of glycerin into a separate container",
+      "material": "MAT-004",
+      "equipment": [
+        "EQ-001"
+      ],
+      "target_amount": "20ml",
+      "weight": "25g",
+      "tolerance": "±0.5ml",
+      "duration": "2 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 3,
+      "type": "weight",
+      "action": "Weigh citric acid",
+      "description": "Using digital balance EQ-001, accurately weigh 1g of citric acid",
+      "material": "MAT-005",
+      "equipment": [
+        "EQ-001"
+      ],
+      "target_amount": "1g",
+      "weight": "1g",
+      "tolerance": "±0.1g",
+      "duration": "2 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 4,
+      "type": "stir",
+      "action": "Begin stirring",
+      "description": "Start overhead stirrer EQ-002 at 200 RPM to create gentle mixing",
+      "equipment": [
+        "EQ-002"
+      ],
+      "stir_speed": "200 RPM",
+      "duration": "continuous",
+      "temperature": "ambient",
+      "critical": false
+    },
+    {
+      "step": 5,
+      "type": "addition",
+      "action": "Add glycerin to water",
+      "description": "While stirring, slowly add the pre-measured glycerin to the water",
+      "material": "MAT-004",
+      "equipment": [
+        "EQ-002"
+      ],
+      "addition_rate": "slow pour",
+      "weight_added": "25g",
+      "duration": "1 minute",
+      "temperature": "ambient",
+      "critical": false
+    },
+    {
+      "step": 6,
+      "type": "addition",
+      "action": "Dissolve citric acid",
+      "description": "Add citric acid to the water-glycerin mixture while maintaining stirring",
+      "material": "MAT-005",
+      "equipment": [
+        "EQ-002"
+      ],
+      "addition_rate": "slow addition",
+      "weight_added": "1g",
+      "duration": "2 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 7,
+      "type": "addition",
+      "action": "Add primary surfactant",
+      "description": "Slowly add 120ml (126g) Sodium Lauryl Glucoside while stirring gently to prevent foaming",
+      "material": "MAT-001",
+      "equipment": [
+        "EQ-002"
+      ],
+      "stir_speed": "150 RPM",
+      "addition_rate": "10ml/minute",
+      "weight_added": "0.126KG",  
+      "duration": "12 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 8,
+      "type": "addition",
+      "action": "Add secondary surfactant",
+      "description": "Add 60ml (63g) Cocamidopropyl Betaine slowly while stirring",
+      "material": "MAT-003",
+      "equipment": [
+        "EQ-002"
+      ],
+      "stir_speed": "150 RPM",
+      "addition_rate": "5ml/minute",
+      "weight_added": "63g",
+      "duration": "12 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 9,
+      "type": "stir",
+      "action": "Final mixing",
+      "description": "Increase stirring to 250 RPM and mix for 10 minutes to ensure complete dispersion",
+      "equipment": [
+        "EQ-002"
+      ],
+      "stir_speed": "250 RPM",
+      "duration": "10 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 10,
+      "type": "measure",
+      "action": "Check pH",
+      "description": "Measure final pH using pH meter EQ-003. Target pH should be 5.5-6.5",
+      "equipment": [
+        "EQ-003"
+      ],
+      "target_range": "5.5-6.5 pH",
+      "duration": "2 minutes",
+      "temperature": "ambient",
+      "critical": true
+    }
+  ]
+}

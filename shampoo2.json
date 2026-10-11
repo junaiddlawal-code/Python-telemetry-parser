@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "id": "SHAM-2024-028",
+    "name": "shampoo2",
+    "version": "1.3",
+    "created_by": "Dr. Lisa Chen",
+    "created_date": "2024-04-02T09:15:00Z",
+    "modified_by": "Alex Thompson",
+    "modified_date": "2024-04-08T16:30:00Z",
+    "laboratory": "Personal Care R&D Lab",
+    "project_code": "PC-VOL-2024",
+    "classification": "proprietary",
+    "status": "development",
+    "batch_size": "500ml",
+    "expected_yield": "485ml",
+    "expected_weight": "495g",
+    "preparation_time": "75 minutes",
+    "shelf_life": "18 months",
+    "storage_conditions": "Store in cool, dry place"
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "type": "addition",
+      "action": "Weigh water base",
+      "description": "Using digital balance EQ-001, measure 270ml (270g) distilled water into mixing vessel",
+      "material": "MAT-102",
+      "equipment": [
+        "EQ-001"
+      ],
+      "addition_rate": "steady stream",
+      "weight_added": "270g",
+      "duration": "1 minute",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 2,
+      "type": "weight",
+      "action": "Weigh protein solution",
+      "description": "Using digital balance EQ-001, accurately measure 12ml (13g) hydrolyzed wheat protein",
+      "material": "MAT-104",
+      "equipment": [
+        "EQ-001"
+      ],
+      "target_amount": "12ml",
+      "weight": "13g",
+      "tolerance": "±0.3ml",
+      "duration": "2 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 3,
+      "type": "weight",
+      "action": "Weigh salt thickener",
+      "description": "Using digital balance EQ-001, accurately weigh 3g of sodium chloride",
+      "material": "MAT-105",
+      "equipment": [
+        "EQ-001"
+      ],
+      "target_amount": "3g",
+      "weight": "3g",
+      "tolerance": "±0.1g",
+      "duration": "1 minute",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 4,
+      "type": "stir",
+      "action": "Begin high-speed mixing",
+      "description": "Start high-speed homogenizer EQ-102 at 1500 RPM for thorough dispersion",
+      "equipment": [
+        "EQ-102"
+      ],
+      "stir_speed": "1500 RPM",
+      "duration": "continuous",
+      "temperature": "ambient",
+      "critical": false
+    },
+    {
+      "step": 5,
+      "type": "addition",
+      "action": "Add protein to water",
+      "description": "While mixing at high speed, add hydrolyzed wheat protein to create protein-enriched base",
+      "material": "MAT-104",
+      "equipment": [
+        "EQ-102"
+      ],
+      "addition_rate": "steady stream",
+      "weight_added": "13g",
+      "duration": "1 minute",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 6,
+      "type": "addition",
+      "action": "Add primary surfactant",
+      "description": "Reduce speed to 800 RPM, slowly add 180ml (189g) SLES to prevent excessive foam",
+      "material": "MAT-101",
+      "equipment": [
+        "EQ-102"
+      ],
+      "stir_speed": "800 RPM",
+      "addition_rate": "15ml/minute",
+      "weight_added": "189g",
+      "duration": "12 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 7,
+      "type": "addition",
+      "action": "Add co-surfactant",
+      "description": "Add 35ml (37g) Coco Glucoside while maintaining gentle mixing for foam stability",
+      "material": "MAT-103",
+      "equipment": [
+        "EQ-102"
+      ],
+      "stir_speed": "600 RPM",
+      "addition_rate": "8ml/minute",
+      "weight_added": "37g",
+      "duration": "4 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 8,
+      "type": "addition",
+      "action": "Add thickening salt",
+      "description": "Slowly sprinkle sodium chloride while mixing to achieve desired viscosity",
+      "material": "MAT-105",
+      "equipment": [
+        "EQ-102"
+      ],
+      "stir_speed": "400 RPM",
+      "addition_rate": "0.5g/minute",
+      "weight_added": "3g",
+      "duration": "6 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 9,
+      "type": "stir",
+      "action": "Homogenize mixture",
+      "description": "Increase speed to 1200 RPM and mix for 8 minutes to ensure complete homogenization",
+      "equipment": [
+        "EQ-102"
+      ],
+      "stir_speed": "1200 RPM",
+      "duration": "8 minutes",
+      "temperature": "ambient",
+      "critical": true
+    },
+    {
+      "step": 10,
+      "type": "measure",
+      "action": "Final pH check",
+      "description": "Measure final pH using pH meter EQ-103. Target pH should be 6.0-7.0",
+      "equipment": [
+        "EQ-103"
+      ],
+      "target_range": "6.0-7.0 pH",
+      "duration": "2 minutes",
+      "temperature": "ambient",
+      "critical": true
+    }
+  ]
+}
