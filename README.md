@@ -1,7 +1,7 @@
-# Applied Integration Coding Challenge
+# Python telemetry parser
 
 ## Overview
-This repository contains my Python solution for the Applied Integration AI coding challenge. It includes the core logic implementation, JSON data parsing, and a dedicated test suite to verify functionality and handle edge cases.
+This repository contains my Python telemetry parser. It includes the core logic implementation, JSON data parsing, and a dedicated test suite to verify functionality and handle edge cases.
 
 ## File Structure
 * `main.py`: Contains the primary algorithmic logic and solution.
